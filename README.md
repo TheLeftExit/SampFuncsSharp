@@ -15,3 +15,5 @@ This sample uses .NET SDK's ability to [create native libraries](https://learn.m
 As someone who's terrified at the thought of writing non-trivial C++ code, this technology might be the only way for me to get into GTA modding. Hopefully it'll help those in a similar situation.
 
 Note - of the functions made available in C#, I only tested `SendToChat`; the rest may or may not work. I also may or may not update the sample as I write the mod that uses all of them.
+
+Another note - currently, the C++ project is configured to build directly to my game's `SAMPFUNCS` folder, and the C# project is missing a publishing configuration that's required to build it as a NativeAOT library, rather than a regular managed assembly. Take care to adjust these settings before you build the solution.
